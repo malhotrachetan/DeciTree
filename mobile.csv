@@ -1,0 +1,15 @@
+low,old ,bachelors,married,service,low
+medium,young,masters,married,business,medum
+low,old ,masters,single,service,high
+high,young,high school,married,service,medum
+low,old ,masters,single,business,high
+high,young,bachelors,single,service,medum
+medium,young,bachelors,single,business,low
+medium,old ,high school,married,service,low
+high,old ,masters,single,business,high
+low,old ,bachelors,married,service,low
+medium,young,high school,married,business,low
+medium,old ,high school,single,business,high
+high ,old ,masters,single,service,medum
+low,old ,high school,married,service,medum
+medium,young,bachelors,single,business,high
