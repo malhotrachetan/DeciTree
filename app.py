@@ -1,10 +1,4 @@
-'''
-Author: Chetan Malhotra
-
-Made for 5th semester course: Design and Analysis(CSE-311) project(Project Based Learning)
-
-This app.py file contains both the gui frontend code and the code that generates that Decision tree for given data set
-'''
+#Author: Chetan Malhotra
 
 #imports:
 
