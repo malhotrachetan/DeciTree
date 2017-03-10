@@ -1,4 +1,10 @@
-#Author: Chetan Malhotra
+'''
+Author: Chetan Malhotra
+
+Made for 5th semester course: Design and Analysis(CSE-311) project(Project Based Learning)
+
+This app.py file contains both the gui frontend code and the code that generates that Decision tree for given data set
+'''
 
 #imports:
 
@@ -13,7 +19,7 @@ import collections
 
 
 class DecisionTree:
-    """Binary tree implementation with true and false branch."""
+    #Binary tree implementation with true and false branch.
 
     def __init__(self, col=-1, value=None, trueBranch=None, falseBranch=None, results=None):
         self.col = col
@@ -235,26 +241,32 @@ def main_func(getvalue):
     # 	4. Plot the decision tree
     # 	5. classify without missing data
     # 	6. Classifiy with missing data
-    # 	(7.) Prune the decision tree according to a minimal gain level
-    # 	(8.) Plot the pruned tree
+    # 	7. Prune the decision tree according to a minimal gain level
+    # 	8. Plot the pruned tree
 
 
         if getvalue == 1:
 
         # the smaller examples
             trainingData = loadCSV('mobile.csv')
+
+
             decisionTree = growDecisionTreeFrom(trainingData)
             decisionTree = growDecisionTreeFrom(trainingData, evaluationFunction=gini)  # with gini
             plot(decisionTree)
+
+
+
             print("\nClassifying without missing data(All the attribute values provided):\n")
 
-            print(classify(['high', 'young', 'masters', 'married', 'service'], decisionTree, dataMissing=False))
+            print(classify(['low','young','masters','married','service'], decisionTree, dataMissing=False))
+
             print("\nClassifying with missing data(Some of the attribute values provides): \n")
             print(classify([None, 'young', None, None, 'business'], decisionTree, dataMissing=True)) # no longer unique
 
 
 
-        else:
+        elif getvalue==2:
             # the bigger example
             trainingData = loadCSV('fishiris.csv')
             decisionTree = growDecisionTreeFrom(trainingData)
@@ -295,11 +307,11 @@ def frame_dataset1():
     window3.geometry('1500x1500')
     main_func(1)
 
-    label4= Label(window3, text="The Decision tree for MOBILE USAGE data set can be viewed in the terminal\nClick on ABOUT to read more about this data-set", anchor=CENTER,
+    label4= Label(window3, text="The Decision tree for MOBILE USAGE data set can be viewed in the console/terminal\nClick on ABOUT to read more about this data-set", anchor=CENTER,
                    height=8, width=74, background='light green')
     label4.config(font=('comic sans', 38, 'bold'))
     label4.pack()
-    button_dataset1_about=Button(window3,text='ABOUT',height=20,width=40,command=frame_dataset1_about)
+    button_dataset1_about=Button(window3,text='ABOUT',height=20,width=40,command=main_func(1))
     button_dataset1_about.config(font=('times', 30, 'bold'))
     button_dataset1_about.pack()
 
@@ -324,7 +336,7 @@ def frame_dataset2():
     main_func(2)
 
     label5 = Label(window4,
-                   text="The Decision tree for IRIS data set can be viewed in the terminal\nClick on ABOUT to read more about this data-set",
+                   text="The Decision tree for IRIS data set can be viewed in your console/terminal\nClick on ABOUT to read more about this data-set",
                    anchor=CENTER,
                    height=8, width=74, background='light green')
     label5.config(font=('comic sans', 38, 'bold'))
@@ -336,7 +348,7 @@ def frame_dataset2():
 
 
 #title
-root.wm_title("PBL 2016: Implementing Decision trees to build a predictive model.")
+root.wm_title("DeciTree")
 
 def frame_id3():
     window2=Toplevel()
@@ -391,7 +403,7 @@ def frame2():
 def frame1():
     # label(text displayed on the frame1)
 
-    label1 = Label(root,text="Welcome!\n\nImplementing decision trees to build a predictive model.\n\nClick NEXT to continue ",
+    label1 = Label(root,text="Welcome to DeciTree!\n\nThis is a desktop GUI app written in Python \nthat builds a predictive model \nusing a Decision tree algorithm called ID3\n\nClick NEXT to continue ",
                    anchor=CENTER, height=14, width=70, background='light green')
     label1.config(font=('comic sans', 38, 'bold'))
     label1.pack()
