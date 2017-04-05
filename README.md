@@ -15,7 +15,7 @@
 > 2. [Data usage](https://github.com/debuggermalhotra/DeciTree/blob/master/mobile.csv): Consider it a [15x6] matrix, 6th columns being the data usage of an individual(low, medium and high) and the other columns being income(low,medium,high); age(old or young); highest degree(high school, bachelors or masters); marital status(married,single); profession(service, business)
      
 #### The values with which the model predicts, have been previously set by me but I'm working to make it an user input sort of thing. 
-![code snippet]("https://github.com/debuggermalhotra/DeciTree/img/1.png")
+[[https://github.com/debuggermalhotra/DeciTree/blob/master/img/1.png|alt=code snippet]]
 
 
 
