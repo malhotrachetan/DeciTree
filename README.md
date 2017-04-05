@@ -10,7 +10,9 @@
   git clone https://github.com/debuggermalhotra/DeciTree.git
 5. Run the app using the command: python3 app.py(Make sure you have 
 
-> ### It currently works on two dataset 
+> ### It currently works on two datasets:
+>     1. [Iris](https://github.com/debuggermalhotra/DeciTree/blob/master/fishiris.csv): Consider it a [150x5] matrix, 5th     >     column being the species of the flower(Setosa, Versicolour, and Virginica) that is to be predicted and the other 4       >     columns are Sepal Length, Sepal Width, Petal Length and Petal Width.
+     
 
 
 
