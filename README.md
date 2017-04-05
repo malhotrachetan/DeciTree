@@ -3,10 +3,11 @@
 ### Right now the build works perfectly fine for Python 3.5
 
 ## Installation:
-<p> cd to the directory where you want to install the APP</p>
-
-
-
+1. Install python3 on your machine. 
+2. Download this repo and unzip it or
+3. Open a terminal and cd into the directry where you wnat to install it.
+4. Type the following command: git clone https://github.com/debuggermalhotra/DeciTree.git
+5. Run the app using the command: python3 app.py(Make sure you have 
 
 
 
