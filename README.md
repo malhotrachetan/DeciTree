@@ -6,8 +6,11 @@
 1. Install python3 on your machine. 
 2. Download this repo and unzip it or
 3. Open a terminal and cd into the directry where you wnat to install it.
-4. Type the following command: git clone https://github.com/debuggermalhotra/DeciTree.git
+4. Type the following command: 
+  git clone https://github.com/debuggermalhotra/DeciTree.git
 5. Run the app using the command: python3 app.py(Make sure you have 
+
+> ### It currently works on two dataset 
 
 
 
