@@ -175,7 +175,7 @@ def classify(observations, tree, dataMissing=False):
                 tw = float(tcount) / (tcount + fcount)
                 fw = float(fcount) / (tcount + fcount)
                 result = collections.defaultdict(
-                    int)  # Problem description: http://blog.ludovf.net/python-collections-defaultdict/
+                    int)  
                 for k, v in tr.items(): result[k] += v * tw
                 for k, v in fr.items(): result[k] += v * fw
                 return dict(result)
