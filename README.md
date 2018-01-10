@@ -3,7 +3,7 @@
 > Right now the build works perfectly fine for Python 3.5!
 
 ## Installation:
-1. Install python3.5 on your machine. 
+1. Install python 3.5 on your machine. 
 2. Download this repo and unzip it or
 3. Open a terminal and cd into the directry where you wnat to install it.
 4. Type the following command: 
