@@ -1,3 +1,5 @@
+## Note: This project was just one-time school thing and isn't maintained anymore. Any bug you come across may be a dependency issue, please free to fix it and use accordingly!
+
 # DeciTree
 ## DeciTree is a desktop GUI app written in Python that builds a predictive model using a Decision tree algorithm called ID3. 
 > Right now the build works perfectly fine for Python 3.5
